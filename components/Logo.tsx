@@ -5,7 +5,7 @@ type Props = {}
 
 const Logo = (props: Props) => {
     return (
-        <div className="flex flex-row items-center pt-5">
+        <div className="flex flex-row items-center pt-7">
             <LogoIcon className="animate-rotate" />
 
             <div className="flex flex-col items-start ml-4">

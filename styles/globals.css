@@ -26,3 +26,19 @@ body {
   display: block;
   background: #E5E5E5;
 }
+
+.toggle--container {
+  box-shadow: insert 0 8px 60px rgba(0, 0, 0, 0.1),
+              inset 0 8px 8px rgba(0, 0, 0, 0.1),
+              inset 0 -4p 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle--indicator {
+  height: 1.1rem;
+  width: 1.1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+              inset 0 4px 4px rgba(255, 255, 255, 0.2),
+              inset 0 -4p 4px rgba(255, 255, 255, 0.2);
+
+}

@@ -5,5 +5,6 @@ export type SideBarNavigation = {
     name: string;
     url: string;
     icon: any;
+    link: boolean;
     children?: SideBarNavigation[];
 }

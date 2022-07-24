@@ -62,7 +62,7 @@ module.exports = {
         bar: '#ffa800',
         gray: {
           10: '#FDFDFD',
-          100: '#535355',
+          100: '#F0F0F0',
           200: '#d3d3d3',
           300: '#bdbdbe',
           400: '#a7a7a8',
@@ -71,7 +71,7 @@ module.exports = {
           700: '#656566',
           800: '#4f4f51',
           900: '#39393b',
-          main: '#232325',
+          main: '#7A797D',
         },
         primary: {
           100: '#e6ebf6',
