@@ -7,4 +7,6 @@ export type SideBarNavigation = {
     icon: any;
     link: boolean;
     children?: SideBarNavigation[];
+    hasComponent?: boolean;
+    component?: any;
 }

@@ -9,7 +9,7 @@ import Favorite from '../public/Icons/Favorite';
 import Setting from '../public/Icons/Setting';
 import Clock from '../public/Icons/Clock';
 import Theme from '../public/Icons/Theme';
-
+import ToggleSwitch from '../components/ToggleSwitch';
 
 export const sideBarNavigation: SideBarNavigation[] = [
     {
@@ -18,6 +18,7 @@ export const sideBarNavigation: SideBarNavigation[] = [
         url: '/',
         icon: Dashboard,
         link: true,
+        hasComponent: false,
         // children?: SideBarNavigation[],
     },
     {
@@ -26,6 +27,7 @@ export const sideBarNavigation: SideBarNavigation[] = [
         url: './marketplace',
         icon: Marketplace,
         link: true,
+        hasComponent: false,
     },
     {
         id: 3,
@@ -33,6 +35,7 @@ export const sideBarNavigation: SideBarNavigation[] = [
         url: './bids',
         icon: Bids,
         link: true,
+        hasComponent: false,
     },
 ]
 
@@ -43,6 +46,7 @@ export const sideBarNavigationProfile: SideBarNavigation[] = [
         url: './portfolio',
         icon: Portfolio,
         link: true,
+        hasComponent: false,
     },
     {
         id: 2,
@@ -50,6 +54,7 @@ export const sideBarNavigationProfile: SideBarNavigation[] = [
         url: './wallet',
         icon: Wallet,
         link: true,
+        hasComponent: false,
     },
     {
         id: 3,
@@ -57,6 +62,7 @@ export const sideBarNavigationProfile: SideBarNavigation[] = [
         url: './favorite',
         icon: Favorite,
         link: true,
+        hasComponent: false,
     },
     {
         id: 4,
@@ -64,6 +70,7 @@ export const sideBarNavigationProfile: SideBarNavigation[] = [
         url: './history',
         icon: Clock,
         link: true,
+        hasComponent: false,
     },
     {
         id: 5,
@@ -71,6 +78,7 @@ export const sideBarNavigationProfile: SideBarNavigation[] = [
         url: './setting',
         icon: Setting,
         link: true,
+        hasComponent: false,
     }
 ]
 
@@ -81,5 +89,7 @@ export const sideBarNavigationOthers: SideBarNavigation[] = [
         url: './theme',
         icon: Theme,
         link: false,
+        hasComponent: true,
+        component: ToggleSwitch,
     }
 ]

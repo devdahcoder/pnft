@@ -4,6 +4,8 @@ import { SiAngularjs } from 'react-icons/si';
 import Marketplace from '../public/Icons/Marketplace';
 import Portfolio from '../public/Icons/Portfolio';
 import { SideBarNavigation } from '../types/index';
+import SidebarNavigationLink from './SidebarNavigationLink';
+import SidebarStaticLink from './SidebarStaticLink';
 
 type Props = {
     header?: string;
@@ -23,15 +25,11 @@ const SidebarNavigationContainer = ({ header, className, navigation}: Props) => 
                 {
                     navigation && navigation.map((item, index) => {
                         return (
-                            <Link href={item?.url} passHref key={item.id}>
-                                <a className={`flex flex-row w-full items-center mb-1 py-2 hover:bg-slate-500`}>
-                                    <item.icon />
-
-                                    <div className="flex flex-row text-gray-main text-sm font-medium capitalize ml-4">
-                                        <p>{item?.name}</p>
-                                    </div>
-                                </a>
-                            </Link>
+                            <>
+                                {
+                                    item.link ? <SidebarNavigationLink key={index} item={item} /> : <SidebarStaticLink key={index} item={item} />
+                                }
+                            </>
                         )
                     })
                 }

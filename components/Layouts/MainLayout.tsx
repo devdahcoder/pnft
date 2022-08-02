@@ -16,7 +16,7 @@ const MainLayout = ({title = 'This is the default title', children}: Props) => {
                 <link rel="icon" href="/favicon.svg" />
             </Head>
 
-            <div className="font-inter">
+            <div className="">
                 {children}
             </div>
         </div>

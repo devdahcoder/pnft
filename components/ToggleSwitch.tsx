@@ -23,7 +23,7 @@ const ToggleSwitch = (props: Props) => {
             </div>
             
 
-            <div className="flex flex-row items-center justify-between border rounded-full w-full px-0.5">
+            <div className="flex flex-row items-center justify-between rounded-full w-full px-0.5">
                 <Light />
                 <Dark />
             </div>
